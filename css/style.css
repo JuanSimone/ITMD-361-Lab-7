@@ -1,4 +1,69 @@
-td, th {
-	border: 1px solid;
-  }
-  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#planets {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#planets th, #planets td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#planets th {
+  background-color: #4C4C4C;
+  color: white;
+}
+
+#planets img {
+  width: 100px;
+  height: auto;
+  margin: 10px 0;
+}
+
+
+#planets tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#planets tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+
+#planets tr:hover {
+  background-color: #ddd;
+}
+
+
+#planets td:nth-child(2) { /* Mercury */
+  background-color: #CCCCCC;
+}
+#planets td:nth-child(3) { /* Venus */
+  background-color: #E4E4E4;
+}
+#planets td:nth-child(4) { /* Earth */
+  background-color: #ADD8E6;
+}
+#planets td:nth-child(5) { /* Mars */
+  background-color: #FFA07A;
+}
